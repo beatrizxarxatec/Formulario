@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormularioJs</title>
+    <script src="formulario.js" async></script>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+    <form action="#" method="post">
+        <fieldset class="cajaBloque">
+            <input type="text" name="Nombre" required placeholder="Nombre" pattern="[a-z A-Z \s]+">
+            <input type="text" first surname="Primer apellido" required placeholder="Primer apellido"
+                pattern="[a-z A-Z \s]+">
+            <input type="text" second surname="Segundo apellido" required placeholder="Segundo apellido"
+                pattern="[a-z A-Z \s]+">
+            <br></br>
+            <input type="text" placeholder="Número de teléfono" required pattern="[0-9]{9}">
+            <input type="email" name="E-mail" required placeholder="Dirección e-mail">
+            <input type="text" name="DNI" required placeholder="DNI" pattern="\d{8}[A-Z]">
+            <h3>Preferencias</h3>
+            <section class="checkbox">
+                <label><input type="checkbox" name="" id="1" class="check">Deportes</label>
+                <label><input type="checkbox" name="" id="2" class="check">Cine</label>
+                <label><input type="checkbox" name="" id="3" class="check">Libros</label>
+                <label><input type="checkbox" name="" id="4" class="check">Videojuegos</label>
+                <label><input type="checkbox" name="" id="5" class="check"> Viajar</label>
+                <label><input type="checkbox" name="" id="6" class="check">Otros</label>
+            </section>
+            <br></br>
+            <textarea id="cajaDeTexto"></textarea>
+            <br></br>
+            <div class="submit">
+                <button>Enviar</button>
+
+
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
